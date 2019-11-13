@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
