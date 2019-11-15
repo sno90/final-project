@@ -3,6 +3,8 @@
 #################################################
 import os
 
+import csv
+
 import pandas as pd
 import numpy as np
 
@@ -29,6 +31,18 @@ app = Flask(__name__)
 def index():
     """Return the homepage."""
     return render_template("index.html")
+
+@app.route("/machine-learning/")
+def machine_learning():
+    with open('./data/data.csv') as file:
+        reader = csv.DictReader(file)
+        chemicals = []
+        for row in reader:
+            chemicals.append({key: value for key, value in row.items()})
+
+    """Return the homepage."""
+    return render_template("machine-learning.html", chemicals=chemicals)
+
 
 if __name__ == "__main__":
     app.run()
