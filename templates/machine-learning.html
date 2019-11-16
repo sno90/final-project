@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="C:\Users\Trisarah\final-project\static\css\style.css">
+    <link rel="stylesheet" href=".\static\css\style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,10 +22,11 @@
             <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
             <a class="nav-item nav-link" href="#">Visualizations</a>
             <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
-            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </nav>
         <!-- END NAVBAR -->
 
+
+        <!-- START CARD FOR CHEMICALS -->
         <div class="row" id="chemical-list">
             {% for chemical in chemicals %}
             <div class="col-sm-6 col-md-4">
@@ -43,6 +44,8 @@
             </div>
             {% endfor %}
         </div>
+        <!-- START CARD FOR CHEMICALS -->
+
 
     </div>
 </body>
