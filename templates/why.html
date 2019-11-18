@@ -15,34 +15,49 @@
     <title>Why Cosmetic Chemical Data?</title>
 </head>
 
-<body>
+<body style="background-color:whitesmoke">
     <div class="wrapper">
         <nav class="nav nav-pills nav-justified">
             <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
             <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
-            <a class="nav-item nav-link" href="{{ url_for('why') }}">The Why</a>
-            <a class="nav-item nav-link" href="{{ url_for('aboutus') }}">About Us</a>
+            <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Why</a>
+            <a class="nav-item nav-link" href="{{ url_for('aboutUs') }}">About Us</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-          </nav>
+        </nav>
+        <div>
+        <h1 align="center" style="font-stretch: expanded">WHY</h1>
+        <h6>
+                <p>The cosmetic industry operates under a microscope with health standards knocking brands off department shelves. From nail to hair products, the industry as a whole has removed products after new research had proven unsafe ingredients in the label. 
+                    </p>
+                <p><b>Analysis I: </b>The chemicals used in discontinued products across major brands were analyzed to determine a link between certain chemicals. After web-scrapping from the Ulta’s website, a cosmetics wholesaler, we used a machine learning algorithm to determine the likelihood of a product to be discontinued based on the chemicals found in the database of discontinued products. 
+                    </p>
+                <p><b>Analysis II: </b> Mega-companies, such as Johnson & Johnson, have discontinued a number of their cosmetic products. We analyzed the effect discontinued products have on a company’s market cap. Using a machine learning algorithm based on the individual companies stock market shares, we applied the analysis I data on “to be discontinued” products to the company’s percent change in market cap for the next year. 
+                    </p>
+                <h6 align="center"><b>Check out the entire list of ingredients found in discontinued products below!</b>
+                    <p>Safety precautions and more information is prodivded for all chemmicals.</p></h6>
+        </h6></div>
 
-                <!-- START CARD FOR CHEMICALS -->
-                <div class="row" id="chemical-list">
-                    {% for chemical in chemicals %}
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ ChemicalName }}</h5>
-                                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                <p class="card-text">
-                                    {{ Chemical_Description }}
-                                </p>
-                                <a href="{{ Web_Link }}" class="card-link">Learn more</a>
-                                <!-- <a href="#" class="card-link">Another link</a> -->
-                            </div>
+        <!-- you can add more content here -->
+        <div class="container">
+            <!-- START CARD FOR CHEMICALS -->
+            <div class="row" id="chemical-list">
+                {% for chemical in chemicals %}
+                <div class="col-sm-6 col-md-4" class="my-custom-scrollbar my-custom-scrollbar-primary">
+                    <div class="card" class="my-custom-scrollbar my-custom-scrollbar-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ chemical.ChemicalName }}</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                {{ chemical.Chemical_Description }}
+                            </p>
+                            <a href="{{ chemical.Web_Link }}" class="card-link">Source Link</a>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
+                {% endfor %}
+            </div>
+        </div>
 
     </div>
 </body>
