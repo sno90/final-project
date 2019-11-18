@@ -32,17 +32,26 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
-@app.route("/machine-learning/")
+@app.route("/machine_learning/")
 def machine_learning():
+    """Return the homepage."""
+    return render_template("machine-learning.html")
+
+@app.route("/why/")
+def whyCode():
     with open('./data/data.csv') as file:
         reader = csv.DictReader(file)
         chemicals = []
         for row in reader:
             chemicals.append({key: value for key, value in row.items()})
-
+        print(chemicals)
     """Return the homepage."""
-    return render_template("machine-learning.html", chemicals=chemicals)
+    return render_template("why.html", chemicals=chemicals)
 
+@app.route("/aboutUs/")
+def aboutUs():
+    """Return the homepage."""
+    return render_template("aboutUs.html")
 
 if __name__ == "__main__":
     app.run()

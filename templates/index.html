@@ -15,13 +15,18 @@
   <title>Heshzario's To Be Discontinued Algorithm</title>
 </head>
 
-<body>
+<body style="background-color:mistyrose;">
+  <div class="scrollbar scrollbar scrollbar-lady-lips">
+      <div class="force-overflow"></div>
+    </div>
   <div class="wrapper">
     <!-- START NAVBAR -->
     <nav class="nav nav-pills nav-justified">
       <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
-      <a class="nav-item nav-link" href="#">Visualizations</a>
       <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
+      <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Why</a>
+      <a class="nav-item nav-link" href="{{ url_for('aboutUs') }}">About Us</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
     </nav>
     <div class="dropdown">
       <img class="nav-dis" src="./static/images/cosmetics-background.jpg">
@@ -30,21 +35,7 @@
   </div>
     <!-- END NAVBAR -->
 
-    <!--make up image -->
-    <div class="row" id="chemical-list">
-      <div class="col-sm-6 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
