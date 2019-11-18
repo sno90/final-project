@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="C:\Users\Aya's-MacBook-Pro\final-project\static\css\style.css">
+  <link rel="stylesheet" href="\static\css\style.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,9 +20,10 @@
     <!-- START NAVBAR -->
     <nav class="nav nav-pills nav-justified">
       <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
-      <a class="nav-item nav-link" href="#">Visualizations</a>
-      <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <a class="nav-item nav-link" href="{{ url_for('machine-learning') }}">Machine Learning</a>
+      <a class="nav-item nav-link" href="{{ url_for('why') }}">The Why</a>
+      <a class="nav-item nav-link" href="{{ url_for('aboutus') }}">About Us</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
     </nav>
     <div class="dropdown">
       <img class="nav-dis" src="./AyaFolder/cosmetics-background.jpg">
