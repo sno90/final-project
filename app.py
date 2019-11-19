@@ -44,7 +44,6 @@ def whyCode():
         chemicals = []
         for row in reader:
             chemicals.append({key: value for key, value in row.items()})
-        print(chemicals)
     """Return the homepage."""
     return render_template("why.html", chemicals=chemicals)
 
