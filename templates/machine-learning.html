@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="\static\css\style.css">
+    <link rel="stylesheet" href=".\static\css\style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,36 +18,22 @@
 <body>
     <div class="wrapper">
         <!-- START NAVBAR -->
-        <nav class="nav nav-pills nav-justified">
-            <a class="nav-item nav-link active" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="#">Visualizations</a>
-            <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
-        </nav>
-        <!-- END NAVBAR -->
-
-
-        <!-- START CARD FOR CHEMICALS -->
-        <div class="row" id="chemical-list">
-            {% for chemical in chemicals %}
-            <div class="col-sm-6 col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ ChemicalName }}</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">
-                            {{ Chemical_Description }}
-                        </p>
-                        <a href="{{ Web_Link }}" class="card-link">Learn more</a>
-                        <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+         <!-- START NAVBAR -->
+    <nav class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
+        <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
+        <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Why</a>
+        <a class="nav-item nav-link" href="{{ url_for('aboutUs') }}">About Us</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+      </nav>
+      <div class="dropdown">
+        <img class="nav-dis" src="./static/images/cosmetics-background.jpg">
+        <div id="myDropdown" class="dropdown-content">
         </div>
-        <!-- START CARD FOR CHEMICALS -->
-
-
+        <!-- END NAVBAR -->
     </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
 
 </html>

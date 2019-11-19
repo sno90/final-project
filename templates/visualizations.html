@@ -18,11 +18,18 @@
 <body>
   <div class="wrapper">
     <!-- START NAVBAR -->
-    <nav class="nav nav-pills nav-justified">
+     <!-- START NAVBAR -->
+     <nav class="nav nav-pills nav-justified">
       <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
-      <a class="nav-item nav-link" href="#">Visualizations</a>
       <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
+      <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Why</a>
+      <a class="nav-item nav-link" href="{{ url_for('aboutUs') }}">About Us</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
     </nav>
+    <div class="dropdown">
+      <img class="nav-dis" src="./static/images/cosmetics-background.jpg">
+      <div id="myDropdown" class="dropdown-content">
+      </div>
     <div class="dropdown">
       <img class="nav-dis" src="./static/images/cosmetics-background.jpg">
       <div id="myDropdown" class="dropdown-content">
