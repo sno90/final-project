@@ -1,47 +1,1 @@
-CompanyName,Year,ProductName,DiscontinuedDate
-Bath & Body Works,2007,11,11
-Bath & Body Works,2008,11,11
-Bath & Body Works,2009,187,187
-Bath & Body Works,2010,76,76
-Bath & Body Works,2011,172,172
-Bath & Body Works,2012,84,84
-Bath & Body Works,2013,22,22
-GUERLAIN,2009,4,4
-GUERLAIN,2010,11,11
-GUERLAIN,2011,9,9
-GUERLAIN,2012,16,16
-GUERLAIN,2013,52,52
-GUERLAIN,2014,31,31
-GUERLAIN,2015,106,106
-GUERLAIN,2016,221,221
-GUERLAIN,2017,18,18
-GUERLAIN,2018,3,3
-New Avon LLC,2009,29,29
-New Avon LLC,2010,69,69
-New Avon LLC,2011,70,70
-New Avon LLC,2012,30,30
-New Avon LLC,2013,4,4
-New Avon LLC,2015,1,1
-"Shiseido Co., Ltd.",2012,2,2
-"Shiseido Co., Ltd.",2014,204,204
-Smashbox Cosmetics,2009,1,1
-The Procter & Gamble Company,2008,38,38
-The Procter & Gamble Company,2009,122,122
-The Procter & Gamble Company,2010,165,165
-The Procter & Gamble Company,2011,111,111
-The Procter & Gamble Company,2012,25,25
-The Procter & Gamble Company,2013,114,114
-The Procter & Gamble Company,2014,209,209
-The Procter & Gamble Company,2015,97,97
-The Procter & Gamble Company,2016,1549,1549
-The Procter & Gamble Company,2017,424,424
-The Procter & Gamble Company,2018,2,2
-Too Faced Cosmetics,2017,186,186
-Too Faced Cosmetics,2018,74,74
-Victoria's Secret Beauty,2007,169,169
-Victoria's Secret Beauty,2008,157,157
-Victoria's Secret Beauty,2009,185,185
-Victoria's Secret Beauty,2010,204,204
-Victoria's Secret Beauty,2011,216,216
-Victoria's Secret Beauty,2012,223,223
-Victoria's Secret Beauty,2013,22,22
+CompanyName,Year,ProductName,DiscontinuedDateBath & Body Works,2007,11,11Bath & Body Works,2008,11,11Bath & Body Works,2009,187,187Bath & Body Works,2010,76,76Bath & Body Works,2011,172,172Bath & Body Works,2012,84,84Bath & Body Works,2013,22,22GUERLAIN,2009,4,4GUERLAIN,2010,11,11GUERLAIN,2011,9,9GUERLAIN,2012,16,16GUERLAIN,2013,52,52GUERLAIN,2014,31,31GUERLAIN,2015,106,106GUERLAIN,2016,221,221GUERLAIN,2017,18,18GUERLAIN,2018,3,3New Avon LLC,2009,29,29New Avon LLC,2010,69,69New Avon LLC,2011,70,70New Avon LLC,2012,30,30New Avon LLC,2013,4,4New Avon LLC,2015,1,1"Shiseido Co., Ltd.",2012,2,2"Shiseido Co., Ltd.",2014,204,204Smashbox Cosmetics,2009,1,1The Procter & Gamble Company,2008,38,38The Procter & Gamble Company,2009,122,122The Procter & Gamble Company,2010,165,165The Procter & Gamble Company,2011,111,111The Procter & Gamble Company,2012,25,25The Procter & Gamble Company,2013,114,114The Procter & Gamble Company,2014,209,209The Procter & Gamble Company,2015,97,97The Procter & Gamble Company,2016,1549,1549The Procter & Gamble Company,2017,424,424The Procter & Gamble Company,2018,2,2Too Faced Cosmetics,2017,186,186Too Faced Cosmetics,2018,74,74Victoria's Secret Beauty,2007,169,169Victoria's Secret Beauty,2008,157,157Victoria's Secret Beauty,2009,185,185Victoria's Secret Beauty,2010,204,204Victoria's Secret Beauty,2011,216,216Victoria's Secret Beauty,2012,223,223Victoria's Secret Beauty,2013,22,22

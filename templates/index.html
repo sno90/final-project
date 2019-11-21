@@ -12,38 +12,111 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <title>Heshzario's To Be Discontinued Algorithm</title>
+  <title>To Be Discontinued Algorithm</title>
 </head>
 
 <body style="background-color:mistyrose;">
   <div class="scrollbar scrollbar scrollbar-lady-lips">
-      <div class="force-overflow"></div>
-    </div>
+    <div class="force-overflow"></div>
+  </div>
   <div class="wrapper">
     <!-- START NAVBAR -->
     <nav class="nav nav-pills nav-justified">
       <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
       <a class="nav-item nav-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
-      <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Why</a>
+      <a class="nav-item nav-link" href="{{ url_for('whyCode') }}">The Chemicals</a>
       <a class="nav-item nav-link" href="{{ url_for('aboutUs') }}">About Us</a>
       <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
     </nav>
     <div class="dropdown">
-      <img class="nav-dis" src="./static/images/cosmetics-background.jpg" width=80% height=25%> 
+      <img class="nav-dis" src="./static/images/cosmetics-background.jpg" height=200px width=100%>
       <div id="myDropdown" class="dropdown-content">
       </div>
-  </div>
+    </div>
     <!-- END NAVBAR -->
+    <div class="header" id="myHeader" align="center">
+      <h2>"To be discontinued..."</h2>
+    </div>
 
-<!-- Tableau Dashboard Here -->
-<div class='tableauPlaceholder' id='viz1574128327973' style='position: relative'><noscript>
-  <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Tobediscontinued___&#47;Dashboard-TBD&#47;1_rss.png' style='border: none' /></a>
-</noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tobediscontinued___&#47;Dashboard-TBD' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Tobediscontinued___&#47;Dashboard-TBD&#47;1.png' /> 
-  <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
-  <param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                   
-   var divElement = document.getElementById('viz1574128327973');                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-   if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='600px';vizElement.style.maxWidth='1000px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p>The cosmetic industry operates under a microscope with health standards knocking brands off department
+            shelves. From nail to hair products, the industry as a whole has removed products after new research had
+            proven unsafe ingredients in the label.
+          </p>
+          <p><b>Analysis I: </b>Mega-companies, such as Johnson & Johnson, have discontinued a number of their
+            cosmetic products. We analyzed the effect discontinued products have on a company’s market cap. Using a
+            machine learning algorithm based on the individual companies stock market shares, we applied the analysis
+            I data on “to be discontinued” products to the company’s percent change in market cap for the next year.
+          </p>
+          <p><b>Analysis II:</b> The chemicals used in discontinued products across major brands were analyzed to
+              determine a link between certain chemicals. After web-scrapping from the Ulta’s website, a cosmetics
+              wholesaler, we used a machine learning algorithm to determine the likelihood of a product to be
+              discontinued based on the chemicals found in the database of discontinued products. </b>
+          </p>
+        </div>
+        <div class="col-3">
+          <br><br><br><br><br>
+          <img class="animated-gif" src="../static/images/lipstickgif.gif" height="200px" width="150px">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xl">
+          <!-- Tableau Graph Dashboard Here -->
+          <div class='tableauPlaceholder' id='viz1574276025180' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GraphVisual&#47;Dashboard-TBD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GraphVisual&#47;Dashboard-TBD' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GraphVisual&#47;Dashboard-TBD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574276025180');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl">
+          <!-- Tableau Box Dashboard Here -->
+          <div class='tableauPlaceholder' id='viz1574275787015' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BoxVisual&#47;TopDiscontinuedBrandProducts&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BoxVisual&#47;TopDiscontinuedBrandProducts' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BoxVisual&#47;TopDiscontinuedBrandProducts&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574275787015');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>    
+        
+        <div class="col-xl">
+          <!-- Tableau Vertical Side Viz -->
+          <div class='tableauPlaceholder' id='viz1574259867363' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChemicalsRemovedbyYear&#47;ChemicalsRemovedbyYear&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='ChemicalsRemovedbyYear&#47;ChemicalsRemovedbyYear' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChemicalsRemovedbyYear&#47;ChemicalsRemovedbyYear&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='filter' value='publish=yes' /></object>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- vertical visual : the right column's js -->
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1574259867363');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -59,5 +132,17 @@
   </div>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <br><h5 class="white-text"><b>Project Requirements Used:</b>
+      HTML, D3, CSS, Jquery, Excel, Python(Pandas, NumPy, SKLearn), Tableau, Flask, etc.
+        </h5>
+      </div>
+      <br>
+    </div>
+  </footer>
 
 </html>

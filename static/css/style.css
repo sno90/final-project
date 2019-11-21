@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(254, 254, 254, 0.8);
+    background-color:pink;
   }
 
 .navbar .navbar-nav {
@@ -10,6 +10,7 @@ body {
   
   .navbar .navbar-collapse {
     text-align: center;
+    color: palevioletred;
   }
 
   .img-fluid {
@@ -17,3 +18,37 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+
+  /* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.footer {
+  padding: 10px 20px;
+  background: #666;
+  color: white;
+}
+
+.animated-gif{
+  width: 20px;
+  height: 50px;
+}
